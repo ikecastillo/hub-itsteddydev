@@ -1,99 +1,118 @@
-Below is a section-by-section teardown of hub-itsteddydev.vercel.app and a precise replacement plan so you can reuse the template for your Leggero proposal site without losing a single structural element.
-I’ve divided the answer into:
-	1.	What the original page contains (verbatim)
-	2.	How to rename / repurpose it for Leggero’s proposal
-	3.	Suggested copy & content blocks to drop straight in
+Help me turn this prompt into a very detailed and thorough not leaving anything we discussed incomplete and make sure it's factored professionally and cleanly. We wnat to use the same theme we are primarily worried about the content itself for this digital proposal. Heres what I have so far, finish out the rest and be super detailed about what should go in each component and section. 
 
-⸻
+C:.
+│   .gitignore
+│   astro.config.mjs
+│   LICENSE
+│   package-lock.json
+│   package.json
+│   README.md
+│   tailwind.config.mjs
+│   tsconfig.json
+│
+├───.vscode
+│       extensions.json
+│       launch.json
+│       settings.json
+│
+├───public
+│   │   favicon.svg
+│   │
+│   └───img
+│       ├───cover
+│       │       personal_hub.jpg
+│       │       personal_hub01.webp
+│       │       personal_hub02.webp
+│       │       personal_hub03.webp
+│       │       personal_hub04.webp
+│       │
+│       ├───notion
+│       │   ├───dark
+│       │   │       my-notion-face-transparent_10_dark.png
+│       │   │
+│       │   └───white
+│       │           my-notion-face-transparent.png
+│       │
+│       └───projects
+│               valoraprime.png
+│
+└───src
+    ├───assets
+    │       astro.svg
+    │       background.svg
+    │
+    ├───components
+    │   │   aboutcomp.astro
+    │   │   App.astro
+    │   │   Articles.astro
+    │   │   BooksMarks.astro
+    │   │   Card.astro
+    │   │   CardDocuments.astro
+    │   │   EducationHub.astro
+    │   │   error404.astro
+    │   │   FunHobbies.astro
+    │   │   HeroButton.astro
+    │   │   LanguagePicker.astro
+    │   │   Navbar.astro
+    │   │   NewBadge.astro
+    │   │   NoDataCard.astro
+    │   │   Projects.astro
+    │   │   SectionContainer.astro
+    │   │   ShopNow.astro
+    │   │   Tooltip.astro
+    │   │
+    │   └───index
+    │           Header.astro
+    │           Hero.astro
+    │           NavButton.astro
+    │           SocialMedia.astro
+    │
+    ├───data
+    │       articles.js
+    │       bookmarks.js
+    │       educationhub.js
+    │       funhobbies.js
+    │       projects.js
+    │
+    ├───i18n
+    │       en.json
+    │       es.json
+    │       index.ts
+    │       ui.ts
+    │       utils.ts
+    │
+    ├───icons
+    │       ArrowLeft.astro
+    │       ArrowRight.astro
+    │       ArrowUpRight.astro
+    │       ExternalLink.astro
+    │       ExternalLinkOff.astro
+    │       GitHub.astro
+    │       IconChevronDown.astro
+    │       IconMoon.astro
+    │       IconShare2.astro
+    │       IconSun.astro
+    │       Instagram.astro
+    │       LinkedIn.astro
+    │       SocialPill.astro
+    │       Web.astro
+    │
+    ├───layouts
+    │       Layout.astro
+    │
+    ├───pages
+    │   │   404.astro
+    │   │   about.astro
+    │   │   index.astro
+    │   │
+    │   └───es
+    │           404.astro
+    │           about.astro
+    │           index.astro
+    │
+    └───styles
+            global.css
 
-1 🔍 Original page inventory (all visible text & nav labels)
 
-UI piece	Native label or text	Source
-Language toggle	“en  •  Español”	￼
-Hero name line	“Teddy Summers”	￼
-Sub-title	“Software Engineer”	￼
-Quick-links row	Resume · Portfolio · GitHub · LinkedIn · Instagram	￼
-Main nav tabs	Projects · Articles · BooksMarks · Education Hub · Fun Hobbies · Shop Now	￼
-Card-grid sample	“Tabler Icons … Skill Icons … SVGL App … Shots … Squoosh …” (resource name + tagline)	￼
-Empty-state text	“Oops, no data to display. But don’t worry, there’s always something interesting waiting for you!”	￼
-
-(The template loads the rest of its cards via client-side JS, so the HTML snapshot only shows the labels above.)
-
-⸻
-
-2 🔄 Section-by-section replacement plan for Leggero Proposal Hub
-
-Template element	Rename / repurpose	Why / what to show
-Language toggle	Keep; swap “Español” for “ES” (future FR/DE slots)	Leggero ships globally; show i18n readiness.
-Hero name line	“Leggero Digital Proposal”	Makes purpose unmistakable.
-Sub-title	“Comprehensive Web, AI & Ops Modernization Plan”	Instant context; pairs with hero graphic of Dyno/Trak.
-Quick-links row	• Executive Summary (PDF) • Full SOW (PDF) • Pricing Sheet (live) • Demo Video Link • Calendly Call	Mirrors original 5-link layout but all proposal-centric.
-Projects tab	Products & Deliverables	Each card = Website Pro, AI Chatbot, Command Center, etc.
-Articles tab	Implementation Timeline	Cards for Phase 1, Phase 2, Phase 3.
-BooksMarks tab	Cost Breakdown	Resource-style cards listing line items and annual options.
-Education Hub	Training & Handover	Cards for “AI Chatbot Onboarding,” “Dashboard Workshop,” etc.
-Fun Hobbies	Case Studies / Inspiration	Quick demo GIFs (chair configurator, dark-mode swap).
-Shop Now	Sign & Pay	Stripe checkout link for deposit; instructions for ACH/Wire.
-Resource cards	Replace each icon-tool card with one deliverable card: • “Website Pro – Unlimited pages” • “Dual-Mode AI Chatbot” … (and so on)	Keeps same grid aesthetic.
-Empty-state message	“More modules coming—let’s discuss anything you’d like scoped.”	Friendly invitation instead of generic text.
-
-
-⸻
-
-3 ✍️ Drop-in copy blocks
-
-3.1 Hero (H1 + lead paragraph)
-
-Leggero Digital Proposal
-Comprehensive Web, AI & Operations Modernization
-A turnkey plan to elevate customer experience, streamline internal workflows, and future-proof growth.
-
-3.2 Quick-link tooltips
-
-Link	Tooltip text
-Executive Summary	“Two-page overview of vision & ROI”
-Full SOW	“Legal scope, milestones & T&Cs”
-Pricing Sheet	“Live table—select modules & see totals update”
-Demo Video	“60-sec walkthrough of prototype screens”
-Calendly	“Book a 15-min Q&A”
-
-3.3 Card copy examples
-
-(format: Head — Subtext / badge)
-	•	Website Pro — Unlimited pages, WCAG 2.2, chair builder
-	•	Dual-Mode AI Chatbot — Customer + dealer interface, GPT-4 tuned (includes 2-day training)
-	•	AI Blog & Social Engine — Autopost to LinkedIn, Instagram, FB — weekly, brand-safe
-	•	Command Center Dashboard — Real-time ops KPIs, parts inventory, ticket board
-	•	Knowledge Base CMS — Confluence-class, 50 SOP docs migrated
-	•	Deposit Checkout — Secure Stripe link – $6 000 reservation fee
-
-Use Tailwind utility classes already in the template (grid-cols-2 md:grid-cols-3, rounded-xl, etc.) so styling stays intact.
-
-3.4 Empty-state replacement
-
-“No module selected here yet—let’s brainstorm together!”
-
-⸻
-
-4 Navigation order & URL anchors
-
-Nav label	Anchor / slug	Order
-Products & Deliverables	#deliverables	01
-Implementation Timeline	#timeline	02
-Cost Breakdown	#pricing	03
-Training & Handover	#training	04
-Case Studies	#showcase	05
-Sign & Pay	#checkout	06
-
-
-⸻
-
-5 Dependencies & “missing nothing” checklist
-	•	Keep language toggle and theme switching—shows modern stack.
-	•	Map every original tab to a concrete proposal need (see table).
-	•	Replace all 5 quick-links with proposal artefacts.
-	•	Convert every resource card into a deliverable or module card—maintain grid.
-	•	Update empty-state copy.
-	•	Ensure Shop Now (Sign & Pay) integrates the Stripe deposit.
-
-With these swaps you retain 100 % of the original design’s structure while presenting Leggero a crystal-clear, fully navigable proposal hub that can be shared with stakeholders and signed off—potentially today.
+You are an expert full stack engineer. Examine and study the contents version and files I currently have in the codebase. I have this website template that I got from hub-itsteddydev it's made with astro. I need to refactor the entire site and repurpose this entire site into a Digital Proposal for Leggero. 
+I have been given ability to create there new tech stack start witih website and then getting a quote on possibilities. My primary concern is making sure new tabs and the tab content is properly tailored towards our digital proposal outcome. 
