@@ -1,55 +1,9 @@
 ---
 import { getI18N } from "@/i18n";
-import CardDocuments from "../components/CardDocuments.astro";
-import NoDataCard from "../components/NoDataCard.astro";
+import PackageBuilder from "../components/PackageBuilder.astro";
 //Para cambiar idioma de textos
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 ---
 
-<div class="flex flex-col gap-y-6">
-  <div class="text-center">
-    <h2 class="text-2xl font-bold text-hub-title dark:text-hub-title-dark mb-4">
-      {i18n.SHOP.TITLE}
-    </h2>
-    <p class="text-hub-subtitle dark:text-hub-subtitle-dark mb-6">
-      {i18n.SHOP.DESCRIPTION}
-    </p>
-  </div>
-  
-  <div class="bg-hub-background-nav dark:bg-hub-background-nav-dark rounded-lg p-6 border border-hub-border dark:border-hub-border-dark">
-    <div class="text-center mb-6">
-      <h3 class="text-xl font-semibold text-hub-title dark:text-hub-title-dark mb-2">
-        Secure Payment
-      </h3>
-      <p class="text-hub-subtitle dark:text-hub-subtitle-dark">
-        Deposit is fully credited toward any package within 14 days.
-      </p>
-    </div>
-    
-    <div class="flex justify-center mb-6">
-      <a 
-        href="https://buy.stripe.com/placeholder" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200"
-      >
-        Pay Deposit ($6,000)
-      </a>
-    </div>
-    
-    <div class="text-center">
-      <p class="text-sm text-hub-subtitle dark:text-hub-subtitle-dark mb-4">
-        Need adjustments? Let's talk →
-      </p>
-      <a 
-        href="https://calendly.com/placeholder" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        class="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 underline"
-      >
-        Calendly
-      </a>
-    </div>
-  </div>
-</div>
+<PackageBuilder />

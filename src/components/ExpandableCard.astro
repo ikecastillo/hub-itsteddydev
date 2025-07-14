@@ -1,0 +1,120 @@
+---
+import { getI18N } from "@/i18n";
+import IconChevronDown from "../icons/IconChevronDown.astro";
+
+//Para cambiar idioma de textos
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+const {
+  id = "",
+  title = "Título predeterminado",
+  subtitle = "Subtítulo predeterminado",
+  description = "",
+  details = [],
+  isNew = false,
+  showImage = true,
+  imageSrc = "",
+  imageAlt = "Ícono predeterminado",
+} = Astro.props;
+---
+
+<div
+  id={id}
+  class="relative rounded-lg border-[1px] border-hub-border dark:border-hub-border-dark bg-hub-background dark:bg-hub-background-dark overflow-hidden"
+>
+  <!-- Badge de "New" -->
+  {
+    isNew && (
+      <div
+        class="animate-pulse absolute top-2 right-2 bg-sky-500 text-white text-xs font-semibold px-2 py-0.5 rounded-full shadow-md z-10"
+      >
+        {i18n.DELIVERABLES.BADGE.NEW}
+      </div>
+    )
+  }
+
+  <!-- Header - Clickable to expand -->
+  <button
+    class="w-full p-4 flex items-center justify-between hover:bg-hub-background-nav dark:hover:bg-hub-background-nav-dark transition-colors duration-200"
+    onclick={`toggleExpand('${id}')`}
+    aria-expanded="false"
+    aria-controls={`${id}-content`}
+  >
+    <div class="flex items-center gap-4">
+      {showImage && imageSrc && (
+        <div class="rounded-lg border-[1px] size-12 flex items-center justify-center border-hub-border dark:border-hub-border-dark dark:bg-hub-background overflow-hidden flex-shrink-0">
+          <img src={imageSrc} alt={imageAlt} class="w-full h-full object-cover" />
+        </div>
+      )}
+      
+      <div class="flex flex-col items-start">
+        <h2 class="font-medium text-base text-hub-title dark:text-hub-title-dark text-left">
+          {title}
+        </h2>
+        <p class="text-hub-subtitle dark:text-hub-subtitle-dark text-sm text-left">
+          {subtitle}
+        </p>
+      </div>
+    </div>
+
+    <IconChevronDown
+      id={`${id}-chevron`}
+      class="size-5 text-hub-subtitle dark:text-hub-subtitle-dark transition-transform duration-300 ease-in-out"
+    />
+  </button>
+
+  <!-- Expandable Content -->
+  <div
+    id={`${id}-content`}
+    class="hidden border-t border-hub-border dark:border-hub-border-dark bg-hub-background-nav dark:bg-hub-background-nav-dark"
+  >
+    <div class="p-4 space-y-4">
+      {description && (
+        <p class="text-hub-subtitle dark:text-hub-subtitle-dark text-sm leading-relaxed">
+          {description}
+        </p>
+      )}
+      
+      {details && details.length > 0 && (
+        <div class="space-y-3">
+          <h4 class="font-medium text-sm text-hub-title dark:text-hub-title-dark">
+            Key Features:
+          </h4>
+          <ul class="space-y-2">
+            {details.map((detail: string) => (
+              <li class="flex items-start gap-2">
+                <div class="w-1.5 h-1.5 rounded-full bg-sky-500 mt-2 flex-shrink-0"></div>
+                <span class="text-sm text-hub-subtitle dark:text-hub-subtitle-dark">
+                  {detail}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleExpand(id: string) {
+    const content = document.getElementById(`${id}-content`);
+    const button = document.querySelector(`[onclick="toggleExpand('${id}')"]`);
+    const chevron = document.getElementById(`${id}-chevron`);
+    
+    if (content && button && chevron) {
+      const isExpanded = content.classList.contains('hidden');
+      
+      if (isExpanded) {
+        content.classList.remove('hidden');
+        button.setAttribute('aria-expanded', 'true');
+        chevron.classList.add('rotate-180');
+      } else {
+        content.classList.add('hidden');
+        button.setAttribute('aria-expanded', 'false');
+        chevron.classList.remove('rotate-180');
+      }
+    }
+  }
+</script> 

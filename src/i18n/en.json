@@ -48,6 +48,7 @@
     }
   },
   "TIMELINE": {
+    "TITLE": "Timeline",
     "empty": {
       "message": "Oops, there are no timeline phases to display.",
       "message2": "But don't worry, there's always something interesting waiting for you!"

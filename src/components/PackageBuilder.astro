@@ -1,0 +1,225 @@
+---
+import { getI18N } from "@/i18n";
+
+//Para cambiar idioma de textos
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+<div class="flex flex-col gap-y-6">
+  <div class="text-center">
+    <h2 class="text-2xl font-bold text-hub-title dark:text-hub-title-dark mb-4">
+      Choose Your Package
+    </h2>
+    <p class="text-hub-subtitle dark:text-hub-subtitle-dark mb-6">
+      Select the perfect package for your digital transformation needs
+    </p>
+  </div>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <!-- Full Demo Package -->
+    <div class="border-2 border-sky-500 rounded-lg p-6 bg-gradient-to-br from-sky-50 to-blue-50 dark:from-sky-900/20 dark:to-blue-900/20">
+      <div class="text-center mb-4">
+        <h3 class="text-xl font-bold text-hub-title dark:text-hub-title-dark mb-2">
+          Full Demo Package
+        </h3>
+        <div class="flex justify-center items-center gap-2 mb-3">
+          <span class="text-2xl font-bold text-sky-600 dark:text-sky-400">$2,000</span>
+          <span class="text-sm text-hub-subtitle dark:text-hub-subtitle-dark">deposit</span>
+        </div>
+        <div class="bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-sm px-3 py-1 rounded-full mb-4">
+          Save $750 if paid today ($1,250 deposit)
+        </div>
+      </div>
+      
+      <ul class="space-y-2 mb-6">
+        <li class="flex items-start gap-2">
+          <div class="w-1.5 h-1.5 rounded-full bg-sky-500 mt-2 flex-shrink-0"></div>
+          <span class="text-sm text-hub-subtitle dark:text-hub-subtitle-dark">Complete demo of all systems</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <div class="w-1.5 h-1.5 rounded-full bg-sky-500 mt-2 flex-shrink-0"></div>
+          <span class="text-sm text-hub-subtitle dark:text-hub-subtitle-dark">Interactive website with chair builder</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <div class="w-1.5 h-1.5 rounded-full bg-sky-500 mt-2 flex-shrink-0"></div>
+          <span class="text-sm text-hub-subtitle dark:text-hub-subtitle-dark">AI chatbot demonstration</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <div class="w-1.5 h-1.5 rounded-full bg-sky-500 mt-2 flex-shrink-0"></div>
+          <span class="text-sm text-hub-subtitle dark:text-hub-subtitle-dark">Command center dashboard preview</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <div class="w-1.5 h-1.5 rounded-full bg-sky-500 mt-2 flex-shrink-0"></div>
+          <span class="text-sm text-hub-subtitle dark:text-hub-subtitle-dark">Deposit counts toward full project</span>
+        </li>
+      </ul>
+      
+      <button class="w-full bg-sky-600 hover:bg-sky-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
+        Choose Full Demo
+      </button>
+    </div>
+
+    <!-- Website Starter Pack -->
+    <div class="border-2 border-gray-300 dark:border-gray-600 rounded-lg p-6 bg-white dark:bg-hub-background-dark">
+      <div class="text-center mb-4">
+        <h3 class="text-xl font-bold text-hub-title dark:text-hub-title-dark mb-2">
+          Website Starter Pack
+        </h3>
+        <div class="flex justify-center items-center gap-2 mb-3">
+          <span class="text-2xl font-bold text-hub-title dark:text-hub-title-dark">$1,500</span>
+          <span class="text-sm text-hub-subtitle dark:text-hub-subtitle-dark">deposit</span>
+        </div>
+        <div class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 text-sm px-3 py-1 rounded-full mb-4">
+          Choose from 3 website options
+        </div>
+      </div>
+      
+      <ul class="space-y-2 mb-6">
+        <li class="flex items-start gap-2">
+          <div class="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0"></div>
+          <span class="text-sm text-hub-subtitle dark:text-hub-subtitle-dark">Essentials Landing Page</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <div class="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0"></div>
+          <span class="text-sm text-hub-subtitle dark:text-hub-subtitle-dark">Core Website (5 pages)</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <div class="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0"></div>
+          <span class="text-sm text-hub-subtitle dark:text-hub-subtitle-dark">Pro Expansion (unlimited)</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <div class="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0"></div>
+          <span class="text-sm text-hub-subtitle dark:text-hub-subtitle-dark">SEO optimization included</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <div class="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0"></div>
+          <span class="text-sm text-hub-subtitle dark:text-hub-subtitle-dark">Mobile-responsive design</span>
+        </li>
+      </ul>
+      
+      <button class="w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
+        Choose Website Pack
+      </button>
+    </div>
+
+    <!-- Pick and Choose -->
+    <div class="border-2 border-purple-500 rounded-lg p-6 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20">
+      <div class="text-center mb-4">
+        <h3 class="text-xl font-bold text-hub-title dark:text-hub-title-dark mb-2">
+          Pick and Choose
+        </h3>
+        <div class="flex justify-center items-center gap-2 mb-3">
+          <span class="text-2xl font-bold text-purple-600 dark:text-purple-400">$1,000</span>
+          <span class="text-sm text-hub-subtitle dark:text-hub-subtitle-dark">deposit</span>
+        </div>
+        <div class="bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-400 text-sm px-3 py-1 rounded-full mb-4">
+          Custom selection from all products
+        </div>
+      </div>
+      
+      <ul class="space-y-2 mb-6">
+        <li class="flex items-start gap-2">
+          <div class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 flex-shrink-0"></div>
+          <span class="text-sm text-hub-subtitle dark:text-hub-subtitle-dark">Choose any combination of products</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <div class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 flex-shrink-0"></div>
+          <span class="text-sm text-hub-subtitle dark:text-hub-subtitle-dark">Flexible pricing based on selection</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <div class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 flex-shrink-0"></div>
+          <span class="text-sm text-hub-subtitle dark:text-hub-subtitle-dark">Custom implementation timeline</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <div class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 flex-shrink-0"></div>
+          <span class="text-sm text-hub-subtitle dark:text-hub-subtitle-dark">Priority support included</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <div class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 flex-shrink-0"></div>
+          <span class="text-sm text-hub-subtitle dark:text-hub-subtitle-dark">Training for selected products</span>
+        </li>
+      </ul>
+      
+      <button class="w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
+        Choose Custom Package
+      </button>
+    </div>
+
+    <!-- Full Tech Stack -->
+    <div class="border-2 border-green-500 rounded-lg p-6 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20">
+      <div class="text-center mb-4">
+        <h3 class="text-xl font-bold text-hub-title dark:text-hub-title-dark mb-2">
+          Full Tech Stack
+        </h3>
+        <div class="flex justify-center items-center gap-2 mb-3">
+          <span class="text-2xl font-bold text-green-600 dark:text-green-400">$3,000</span>
+          <span class="text-sm text-hub-subtitle dark:text-hub-subtitle-dark">deposit</span>
+        </div>
+        <div class="bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-sm px-3 py-1 rounded-full mb-4">
+          Everything included - Complete solution
+        </div>
+      </div>
+      
+      <ul class="space-y-2 mb-6">
+        <li class="flex items-start gap-2">
+          <div class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 flex-shrink-0"></div>
+          <span class="text-sm text-hub-subtitle dark:text-hub-subtitle-dark">All products and services included</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <div class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 flex-shrink-0"></div>
+          <span class="text-sm text-hub-subtitle dark:text-hub-subtitle-dark">Complete implementation timeline</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <div class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 flex-shrink-0"></div>
+          <span class="text-sm text-hub-subtitle dark:text-hub-subtitle-dark">Comprehensive training program</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <div class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 flex-shrink-0"></div>
+          <span class="text-sm text-hub-subtitle dark:text-hub-subtitle-dark">Priority support and maintenance</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <div class="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 flex-shrink-0"></div>
+          <span class="text-sm text-hub-subtitle dark:text-hub-subtitle-dark">Future updates and enhancements</span>
+        </li>
+      </ul>
+      
+      <button class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
+        Choose Full Stack
+      </button>
+    </div>
+  </div>
+
+  <!-- Payment Information -->
+  <div class="bg-hub-background-nav dark:bg-hub-background-nav-dark rounded-lg p-6 border border-hub-border dark:border-hub-border-dark">
+    <div class="text-center mb-4">
+      <h3 class="text-lg font-semibold text-hub-title dark:text-hub-title-dark mb-2">
+        Secure Payment Information
+      </h3>
+      <p class="text-hub-subtitle dark:text-hub-subtitle-dark text-sm">
+        All deposits are fully credited toward your chosen package within 14 days.
+      </p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="text-center">
+        <h4 class="font-medium text-hub-title dark:text-hub-title-dark mb-2">Need to discuss options?</h4>
+        <a 
+          href="https://calendly.com/placeholder" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="text-sky-500 hover:text-sky-600 dark:text-sky-400 dark:hover:text-sky-300 underline"
+        >
+          Schedule a consultation
+        </a>
+      </div>
+      
+      <div class="text-center">
+        <h4 class="font-medium text-hub-title dark:text-hub-title-dark mb-2">Ready to proceed?</h4>
+        <p class="text-sm text-hub-subtitle dark:text-hub-subtitle-dark">
+          Click any package above to start your digital transformation
+        </p>
+      </div>
+    </div>
+  </div>
+</div> 
