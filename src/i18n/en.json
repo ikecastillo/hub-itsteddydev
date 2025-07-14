@@ -1,27 +1,27 @@
 {
-  "SEO_TITLE": "ItsTeddyDev Hub - Resource and Content Center",
-  "SEO_DESCRIPTION": "Explore books, articles, hobbies, and educational resources at Justcoddev's personal hub. Discover the best of my career and my recommendations.",
+  "SEO_TITLE": "AUZI Solutions - Leggero Proposal",
+  "SEO_DESCRIPTION": "Your Proposal for the updated Leggero webpage and potential new Leggero Tech Stack overhaul - Prepared by Ike Castillo",
   "ERROR_404": {
     "TITLE": "404 - Not Found",
     "DESCRIPTION": "Not Found",
     "BACK_HOMEPAGE_BTN": "Go Back"
   },
   "HERO": {
-    "NAME": "Teddy Summers",
-    "TITLE": "Software Engineer",
-    "DESCRIPTION": "I'm a software engineer who loves to learn and share knowledge. I'm passionate about technology, programming, and software development. I'm always looking for new challenges and opportunities to grow."
+    "NAME": "AUZI Solutions",
+    "TITLE": "Software Engineering Team",
+    "DESCRIPTION": "We are a team of software engineers who keep up to date with all modern technologies that release on a daily basis and have a mission to bring those to companies who want to compete with the major industry players without the need to hire multiple engineers on their staff. We are always looking for new challenges and opportunities to grow."
   },
   "ABOUT": {
     "TITLE": "about",
     "DESCRIPTION": "About DESCRIPTION"
   },
   "NAVBAR": {
-    "PROJECTS": "Projects",
-    "ARTICLES": "Articles",
-    "BOOKSMARKS": "BooksMarks",
-    "EDUCATION_HUB": "Education Hub",
-    "FUN_HOBBIES": "Fun Hobbies",
-    "SHOP_NOW": "Shop Now"
+    "PROJECTS": "Project Overview",
+    "ARTICLES": "Redesigned Website",
+    "BOOKSMARKS": "AI at Leggero",
+    "EDUCATION_HUB": "Quote",
+    "FUN_HOBBIES": "Something here",
+    "SHOP_NOW": "Something Here"
   },
   "PROJECTS": {
     "empty": {
