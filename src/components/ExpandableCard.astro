@@ -21,7 +21,7 @@ const {
 
 <div
   id={id}
-  class="relative rounded-lg border-[1px] border-hub-border dark:border-hub-border-dark bg-hub-background dark:bg-hub-background-dark overflow-hidden"
+  class="expandable-card relative rounded-lg border-[1px] border-hub-border dark:border-hub-border-dark bg-hub-background dark:bg-hub-background-dark overflow-hidden"
 >
   <!-- Badge de "New" -->
   {
@@ -36,10 +36,9 @@ const {
 
   <!-- Header - Clickable to expand -->
   <button
-    class="w-full p-4 flex items-center justify-between hover:bg-hub-background-nav dark:hover:bg-hub-background-nav-dark transition-colors duration-200"
-    onclick={`toggleExpand('${id}')`}
-    aria-expanded="false"
-    aria-controls={`${id}-content`}
+    class="expandable-trigger w-full p-4 flex items-center justify-between hover:bg-hub-background-nav dark:hover:bg-hub-background-nav-dark transition-colors duration-200 cursor-pointer"
+    data-card-id={id}
+    type="button"
   >
     <div class="flex items-center gap-4">
       {showImage && imageSrc && (
@@ -59,15 +58,13 @@ const {
     </div>
 
     <IconChevronDown
-      id={`${id}-chevron`}
-      class="size-5 text-hub-subtitle dark:text-hub-subtitle-dark transition-transform duration-300 ease-in-out"
+      class="expandable-chevron size-5 text-hub-subtitle dark:text-hub-subtitle-dark transition-transform duration-300 ease-in-out"
     />
   </button>
 
   <!-- Expandable Content -->
   <div
-    id={`${id}-content`}
-    class="hidden border-t border-hub-border dark:border-hub-border-dark bg-hub-background-nav dark:bg-hub-background-nav-dark"
+    class="expandable-content hidden border-t border-hub-border dark:border-hub-border-dark bg-hub-background-nav dark:bg-hub-background-nav-dark"
   >
     <div class="p-4 space-y-4">
       {description && (
@@ -97,24 +94,62 @@ const {
   </div>
 </div>
 
-<script>
-  function toggleExpand(id: string) {
-    const content = document.getElementById(`${id}-content`);
-    const button = document.querySelector(`[onclick="toggleExpand('${id}')"]`);
-    const chevron = document.getElementById(`${id}-chevron`);
-    
-    if (content && button && chevron) {
-      const isExpanded = content.classList.contains('hidden');
-      
-      if (isExpanded) {
-        content.classList.remove('hidden');
-        button.setAttribute('aria-expanded', 'true');
-        chevron.classList.add('rotate-180');
-      } else {
-        content.classList.add('hidden');
-        button.setAttribute('aria-expanded', 'false');
-        chevron.classList.remove('rotate-180');
-      }
-    }
+<style>
+  .expandable-card {
+    transition: all 0.3s ease;
   }
+  
+  .expandable-trigger {
+    user-select: none;
+  }
+  
+  .expandable-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .expandable-content.expanded {
+    max-height: 1000px;
+  }
+  
+  .expandable-chevron {
+    transition: transform 0.3s ease;
+  }
+  
+  .expandable-chevron.rotated {
+    transform: rotate(180deg);
+  }
+</style>
+
+<script is:inline>
+  // Simple and reliable expandable card functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    // Find all expandable triggers
+    const triggers = document.querySelectorAll('.expandable-trigger');
+    
+    triggers.forEach(function(trigger) {
+      trigger.addEventListener('click', function() {
+        // Find the content and chevron for this card
+        const card = this.closest('.expandable-card');
+        const content = card.querySelector('.expandable-content');
+        const chevron = card.querySelector('.expandable-chevron');
+        
+        // Toggle the expanded state
+        const isExpanded = content.classList.contains('expanded');
+        
+        if (isExpanded) {
+          // Collapse
+          content.classList.remove('expanded');
+          chevron.classList.remove('rotated');
+          content.classList.add('hidden');
+        } else {
+          // Expand
+          content.classList.remove('hidden');
+          content.classList.add('expanded');
+          chevron.classList.add('rotated');
+        }
+      });
+    });
+  });
 </script> 
