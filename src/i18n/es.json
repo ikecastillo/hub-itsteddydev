@@ -1,65 +1,74 @@
 {
-  "SEO_TITLE": "ItsTeddyDev Hub - Centro de Recursos y Contenidos",
-  "SEO_DESCRIPTION": "Explora libros, artículos, pasatiempos y recursos educativos en el hub personal de Justcoddev. Descubre lo mejor de mi carrera y mis recomendaciones.",
+  "SEO_TITLE": "Leggero Digital Proposal",
+  "SEO_DESCRIPTION": "Comprehensive Web, AI & Operations modernization plan for Leggero.",
   "ERROR_404": {
     "TITLE": "404 - No Encontrado",
     "DESCRIPTION": "No Encontrado",
     "BACK_HOMEPAGE_BTN": "Volver"
   },
   "HERO": {
-    "NAME": "Teddy Summers",
-    "TITLE": "Ingeniero de Software",
-    "DESCRIPTION": "Soy un ingeniero de software que ama aprender y compartir conocimientos. Me apasiona la tecnología, la programación y el desarrollo de software. Siempre estoy buscando nuevos desafíos y oportunidades para crecer."
+    "NAME": "Leggero Digital Proposal",
+    "TITLE": "Comprehensive Web, AI & Operations Modernization",
+    "DESCRIPTION": "A turnkey plan to elevate customer experience, streamline internal workflows, and future-proof growth."
   },
   "ABOUT": {
     "TITLE": "acerca de",
     "DESCRIPTION": "Acerca de DESCRIPCIÓN"
   },
   "NAVBAR": {
-    "PROJECTS": "Projectos",
-    "ARTICLES": "Artículos",
-    "BOOKSMARKS": "Marcadores",
-    "EDUCATION_HUB": "Hub Educativo",
-    "FUN_HOBBIES": "Pasatiempos",
-    "SHOP_NOW": "Comprar Ahora"
+    "DELIVERABLES": "Products & Deliverables",
+    "TIMELINE": "Implementation Timeline",
+    "PRICING": "Cost Breakdown",
+    "TRAINING": "Training & Handover",
+    "CHECKOUT": "Sign & Pay"
   },
-  "PROJECTS": {
+  "SHOP": { 
+    "TITLE": "Secure Deposit", 
+    "DESCRIPTION": "Reserve our build slot today. 100 % applied to your chosen package." 
+  },
+  "TIMELINE": { 
+    "TITLE": "Implementation Timeline" 
+  },
+  "PRICING_SECTION": { 
+    "TITLE": "Cost Breakdown" 
+  },
+  "TRAINING_SECTION": { 
+    "TITLE": "Training & Handover" 
+  },
+  "DELIVERABLES_SECTION": { 
+    "TITLE": "Products & Deliverables" 
+  },
+  "DELIVERABLES": {
     "empty": {
-      "message": "Vaya, no hay proyectos para mostrar.",
-      "message2": "¡Pero no te preocupes, siempre hay algo interesante esperándote!"
+      "message": "Oops, no deliverables to display.",
+      "message2": "But don't worry, there's always something interesting waiting for you!"
     },
     "BADGE": {
-      "NEW": "Nuevo"
+      "NEW": "New"
     }
   },
-  "ARTICLES": {
+  "TIMELINE": {
     "empty": {
-      "message": "Vaya, no hay artículos para mostrar.",
-      "message2": "¡Pero no te preocupes, siempre hay algo interesante esperándote!"
+      "message": "Oops, there are no timeline phases to display.",
+      "message2": "But don't worry, there's always something interesting waiting for you!"
     }
   },
-  "BOOKSMARKS": {
+  "PRICING": {
     "empty": {
-      "message": "Vaya, no hay marcadores para mostrar.",
-      "message2": "¡Pero no te preocupes, siempre hay algo interesante esperándote!"
+      "message": "Oops, there are no pricing options to display.",
+      "message2": "But don't worry, there's always something interesting waiting for you!"
     }
   },
-  "EDUCATION_HUB": {
+  "TRAINING": {
     "empty": {
-      "message": "Vaya, no hay recursos educativos para mostrar.",
-      "message2": "¡Pero no te preocupes, siempre hay algo interesante esperándote!"
+      "message": "Oops, there are no training sessions to display.",
+      "message2": "But don't worry, there's always something interesting waiting for you!"
     }
   },
-  "FUN_HOBBIES": {
+  "CHECKOUT": {
     "empty": {
-      "message": "Vaya, no hay pasatiempos divertidos para mostrar.",
-      "message2": "¡Pero no te preocupes, siempre hay algo interesante esperándote!"
-    }
-  },
-  "SHOP_NOW": {
-    "empty": {
-      "message": "Vaya, no hay productos para mostrar.",
-      "message2": "¡Pero no te preocupes, siempre hay algo interesante esperándote!"
+      "message": "Oops, there are no checkout options to display.",
+      "message2": "But don't worry, there's always something interesting waiting for you!"
     }
   },
   "NOT_DATA": {

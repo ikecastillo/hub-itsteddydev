@@ -45,5 +45,17 @@ const i18n = getI18N({ currentLocale });
     <p class="text-base text-hub-subtitle dark:text-hub-subtitle-dark">
       {i18n.HERO.TITLE}
     </p>
+    <p class="text-sm text-hub-subtitle dark:text-hub-subtitle-dark mt-2">
+      {i18n.HERO.DESCRIPTION}
+    </p>
+  </div>
+  
+  <div class="flex flex-col sm:flex-row gap-3 mt-6">
+    <HeroButton href="#deliverables" class="flex-1">
+      Download Executive Summary (PDF)
+    </HeroButton>
+    <HeroButton href="https://calendly.com/placeholder" class="flex-1">
+      Book a 15-min Call
+    </HeroButton>
   </div>
 </div>

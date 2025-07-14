@@ -10,7 +10,13 @@ const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 ---
 
-<div class="flex flex-col-reverse gap-y-3">
+<div class="flex flex-col gap-y-3">
+  <div class="text-center mb-6">
+    <h2 class="text-2xl font-bold text-hub-title dark:text-hub-title-dark">
+      {i18n.PRICING_SECTION.TITLE}
+    </h2>
+  </div>
+  
   {
     cardsData.length > 0 ? (
       cardsData.map((card) => (
@@ -26,8 +32,8 @@ const i18n = getI18N({ currentLocale });
       ))
     ) : (
       <NoDataCard
-        message={i18n.BOOKSMARKS.empty.message}
-        subtitle={i18n.BOOKSMARKS.empty.message2}
+        message={i18n.PRICING.empty.message}
+        subtitle={i18n.PRICING.empty.message2}
         imageSrc="/img/notion/white/my-notion-face-transparent_9.png"
       />
     )

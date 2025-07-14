@@ -1,6 +1,6 @@
 {
-  "SEO_TITLE": "AUZI Solutions - Leggero Proposal",
-  "SEO_DESCRIPTION": "Your Proposal for the updated Leggero webpage and potential new Leggero Tech Stack overhaul - Prepared by Ike Castillo",
+  "SEO_TITLE": "Leggero Digital Proposal",
+  "SEO_DESCRIPTION": "Comprehensive Web, AI & Operations modernization plan for Leggero.",
   "ERROR_404": {
     "TITLE": "404 - Not Found",
     "DESCRIPTION": "Not Found",
@@ -22,9 +22,25 @@
     "TRAINING": "Training & Handover",
     "CHECKOUT": "Sign & Pay"
   },
+  "SHOP": { 
+    "TITLE": "Secure Deposit", 
+    "DESCRIPTION": "Reserve our build slot today. 100 % applied to your chosen package." 
+  },
+  "TIMELINE": { 
+    "TITLE": "Implementation Timeline" 
+  },
+  "PRICING_SECTION": { 
+    "TITLE": "Cost Breakdown" 
+  },
+  "TRAINING_SECTION": { 
+    "TITLE": "Training & Handover" 
+  },
+  "DELIVERABLES_SECTION": { 
+    "TITLE": "Products & Deliverables" 
+  },
   "DELIVERABLES": {
     "empty": {
-      "message": "Oops, no projects to display.",
+      "message": "Oops, no deliverables to display.",
       "message2": "But don't worry, there's always something interesting waiting for you!"
     },
     "BADGE": {
@@ -33,25 +49,25 @@
   },
   "TIMELINE": {
     "empty": {
-      "message": "Oops, there are no articles to display.",
+      "message": "Oops, there are no timeline phases to display.",
       "message2": "But don't worry, there's always something interesting waiting for you!"
     }
   },
   "PRICING": {
     "empty": {
-      "message": "Oops, there are no bookmarks to display.",
+      "message": "Oops, there are no pricing options to display.",
       "message2": "But don't worry, there's always something interesting waiting for you!"
     }
   },
   "TRAINING": {
     "empty": {
-      "message": "Oops, there are no educational resources to display.",
+      "message": "Oops, there are no training sessions to display.",
       "message2": "But don't worry, there's always something interesting waiting for you!"
     }
   },
   "CHECKOUT": {
     "empty": {
-      "message": "Oops, there are no fun hobbies to display.",
+      "message": "Oops, there are no checkout options to display.",
       "message2": "But don't worry, there's always something interesting waiting for you!"
     }
   },
