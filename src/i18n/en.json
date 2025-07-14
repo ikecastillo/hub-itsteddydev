@@ -16,10 +16,10 @@
     "DESCRIPTION": "About DESCRIPTION"
   },
   "NAVBAR": {
-    "DELIVERABLES": "Products & Deliverables",
-    "TIMELINE": "Implementation Timeline",
+    "DELIVERABLES": "Products",
+    "TIMELINE": "Timeline",
     "PRICING": "Cost Breakdown",
-    "TRAINING": "Training & Handover",
+    "TRAINING": "Training",
     "CHECKOUT": "Sign & Pay"
   },
   "SHOP": { 
@@ -27,16 +27,16 @@
     "DESCRIPTION": "Reserve our build slot today. 100 % applied to your chosen package." 
   },
   "TIMELINE": { 
-    "TITLE": "Implementation Timeline" 
+    "TITLE": "Timeline" 
   },
   "PRICING_SECTION": { 
     "TITLE": "Cost Breakdown" 
   },
   "TRAINING_SECTION": { 
-    "TITLE": "Training & Handover" 
+    "TITLE": "Training" 
   },
   "DELIVERABLES_SECTION": { 
-    "TITLE": "Products & Deliverables" 
+    "TITLE": "Products" 
   },
   "DELIVERABLES": {
     "empty": {
