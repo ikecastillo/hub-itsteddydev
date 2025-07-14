@@ -7,23 +7,22 @@
     "BACK_HOMEPAGE_BTN": "Go Back"
   },
   "HERO": {
-    "NAME": "AUZI Solutions",
-    "TITLE": "Software Engineering Team",
-    "DESCRIPTION": "We are a team of software engineers who keep up to date with all modern technologies that release on a daily basis and have a mission to bring those to companies who want to compete with the major industry players without the need to hire multiple engineers on their staff. We are always looking for new challenges and opportunities to grow."
+    "NAME": "Leggero Digital Proposal",
+    "TITLE": "Comprehensive Web, AI & Operations Modernization",
+    "DESCRIPTION": "A turnkey plan to elevate customer experience, streamline internal workflows, and future-proof growth."
   },
   "ABOUT": {
     "TITLE": "about",
     "DESCRIPTION": "About DESCRIPTION"
   },
   "NAVBAR": {
-    "PROJECTS": "Project Overview",
-    "ARTICLES": "Redesigned Website",
-    "BOOKSMARKS": "AI at Leggero",
-    "EDUCATION_HUB": "Quote",
-    "FUN_HOBBIES": "Something here",
-    "SHOP_NOW": "Something Here"
+    "DELIVERABLES": "Products & Deliverables",
+    "TIMELINE": "Implementation Timeline",
+    "PRICING": "Cost Breakdown",
+    "TRAINING": "Training & Handover",
+    "CHECKOUT": "Sign & Pay"
   },
-  "PROJECTS": {
+  "DELIVERABLES": {
     "empty": {
       "message": "Oops, no projects to display.",
       "message2": "But don't worry, there's always something interesting waiting for you!"
@@ -32,33 +31,27 @@
       "NEW": "New"
     }
   },
-  "ARTICLES": {
+  "TIMELINE": {
     "empty": {
       "message": "Oops, there are no articles to display.",
       "message2": "But don't worry, there's always something interesting waiting for you!"
     }
   },
-  "BOOKSMARKS": {
+  "PRICING": {
     "empty": {
       "message": "Oops, there are no bookmarks to display.",
       "message2": "But don't worry, there's always something interesting waiting for you!"
     }
   },
-  "EDUCATION_HUB": {
+  "TRAINING": {
     "empty": {
       "message": "Oops, there are no educational resources to display.",
       "message2": "But don't worry, there's always something interesting waiting for you!"
     }
   },
-  "FUN_HOBBIES": {
+  "CHECKOUT": {
     "empty": {
       "message": "Oops, there are no fun hobbies to display.",
-      "message2": "But don't worry, there's always something interesting waiting for you!"
-    }
-  },
-  "SHOP_NOW": {
-    "empty": {
-      "message": "Oops, there are no products to display.",
       "message2": "But don't worry, there's always something interesting waiting for you!"
     }
   },
